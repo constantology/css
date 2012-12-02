@@ -1,6 +1,6 @@
 # box.css
 
-encapsulates minimum functionality for creating `HBox` and `VBox` elements using the new CSS3 flex box module — as well as the old CSS3 box module and table display as fall-backs.
+encapsulates minimum functionality for creating `HBox` and `VBox` elements using the new CSS3 flex box module — as well as the old CSS3 box module.
 
 ## About
 
@@ -20,7 +20,7 @@ Works correctly in stable Chrome and Opera, MSIE 10 and Webkit nightly.
 
 Partial support in FireFox — stable and nightly — and Safari stable.
 
-## File size
+## File size (not obfuscated and with comments)
 
 - ≅ 1.40kb (gzipped)
-- ≅ 7.63kb (unzipped)
+- ≅ 7.53kb (unzipped)
