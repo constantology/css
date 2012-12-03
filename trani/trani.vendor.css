@@ -1,0 +1,148 @@
+	.trani {
+		-moz-transition    : all 350ms ease-in-out ;
+		-ms-transition     : all 350ms ease-in-out ;
+		-o-transition      : all 350ms ease-in-out ;
+		-webkit-transition : all 350ms ease-in-out ;
+		}
+
+	.trani-delay-1 {
+		-moz-transition-delay    : 250ms;
+		-ms-transition-delay     : 250ms;
+		-o-transition-delay      : 250ms;
+		-webkit-transition-delay : 250ms;
+		}
+	.trani-delay-2 {
+		-moz-transition-delay    : 500ms;
+		-ms-transition-delay     : 500ms;
+		-o-transition-delay      : 500ms;
+		-webkit-transition-delay : 500ms;
+		}
+	.trani-delay-3 {
+		-moz-transition-delay    : 750ms;
+		-ms-transition-delay     : 750ms;
+		-o-transition-delay      : 750ms;
+		-webkit-transition-delay : 750ms;
+		}
+
+	.trani-fn-ease {
+		-moz-transition-timing-function    : ease;
+		-ms-transition-timing-function     : ease;
+		-o-transition-timing-function      : ease;
+		-webkit-transition-timing-function : ease;
+		}
+	.trani-fn-ease-in {
+		-moz-transition-timing-function    : ease-in;
+		-ms-transition-timing-function     : ease-in;
+		-o-transition-timing-function      : ease-in;
+		-webkit-transition-timing-function : ease-in;
+		}
+	.trani-fn-ease-io {
+		-moz-transition-timing-function    : ease-in-out;
+		-ms-transition-timing-function     : ease-in-out;
+		-o-transition-timing-function      : ease-in-out;
+		-webkit-transition-timing-function : ease-in-out;
+		}
+	.trani-fn-ease-out {
+		-moz-transition-timing-function    : ease-out;
+		-ms-transition-timing-function     : ease-out;
+		-o-transition-timing-function      : ease-out;
+		-webkit-transition-timing-function : ease-out;
+		}
+	.trani-fn-linear {
+		-moz-transition-timing-function    : linear;
+		-ms-transition-timing-function     : linear;
+		-o-transition-timing-function      : linear;
+		-webkit-transition-timing-function : linear;
+		}
+
+	.trani-ms-1 {
+		-moz-transition-duration    : 250ms;
+		-ms-transition-duration     : 250ms;
+		-o-transition-duration      : 250ms;
+		-webkit-transition-duration : 250ms;
+		}
+	.trani-ms-2 {
+		-moz-transition-duration    : 500ms;
+		-ms-transition-duration     : 500ms;
+		-o-transition-duration      : 500ms;
+		-webkit-transition-duration : 500ms;
+		}
+	.trani-ms-3 {
+		-moz-transition-duration    : 750ms;
+		-ms-transition-duration     : 750ms;
+		-o-transition-duration      : 750ms;
+		-webkit-transition-duration : 750ms;
+		}
+
+	.trani-prop-b {
+		-moz-transition-property    : bottom;
+		-ms-transition-property     : bottom;
+		-o-transition-property      : bottom;
+		-webkit-transition-property : bottom;
+		}
+	.trani-prop-bl {
+		-moz-transition-property    : bottom, left;
+		-ms-transition-property     : bottom, left;
+		-o-transition-property      : bottom, left;
+		-webkit-transition-property : bottom, left;
+		}
+	.trani-prop-br {
+		-moz-transition-property    : bottom, right;
+		-ms-transition-property     : bottom, right;
+		-o-transition-property      : bottom, right;
+		-webkit-transition-property : bottom, right;
+		}
+	.trani-prop-l {
+		-moz-transition-property    : left;
+		-ms-transition-property     : left;
+		-o-transition-property      : left;
+		-webkit-transition-property : left;
+		}
+	.trani-prop-h {
+		-moz-transition-property    : max-height;
+		-ms-transition-property     : max-height;
+		-o-transition-property      : max-height;
+		-webkit-transition-property : max-height;
+		}
+	.trani-prop-r {
+		-moz-transition-property    : right;
+		-ms-transition-property     : right;
+		-o-transition-property      : right;
+		-webkit-transition-property : right;
+		}
+	.trani-prop-o {
+		-moz-transition-property    : opacity;
+		-ms-transition-property     : opacity;
+		-o-transition-property      : opacity;
+		-webkit-transition-property : opacity;
+		}
+	.trani-prop-t {
+		-moz-transition-property    : top;
+		-ms-transition-property     : top;
+		-o-transition-property      : top;
+		-webkit-transition-property : top;
+		}
+	.trani-prop-tl {
+		-moz-transition-property    : top, left;
+		-ms-transition-property     : top, left;
+		-o-transition-property      : top, left;
+		-webkit-transition-property : top, left;
+		}
+	.trani-prop-tr {
+		-moz-transition-property    : top, right;
+		-ms-transition-property     : top, right;
+		-o-transition-property      : top, right;
+		-webkit-transition-property : top, right;
+		}
+	.trani-prop-txt {
+		-moz-transition-property    : font-size, line-height, opacity;
+		-ms-transition-property     : font-size, line-height, opacity;
+		-o-transition-property      : font-size, line-height, opacity;
+		-webkit-transition-property : font-size, line-height, opacity;
+		}
+	.trani-prop-w {
+		-moz-transition-property    : max-width;
+		-ms-transition-property     : max-width;
+		-o-transition-property      : max-width;
+		-webkit-transition-property : max-width;
+		}

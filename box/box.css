@@ -1,15 +1,7 @@
 /*~~ box classes: add these to the element containing the .box-item elements to control their layout ~~*/
 	.box { /* default parent class MUST be on the element that will contain all .box-item elements */
-			-moz-box-align    : center ; -moz-box-pack    : center  ; -moz-align-content    : center ; -moz-align-items    : center ; -moz-flex-wrap    : none ;
-			-ms-box-align     : center ; -ms-box-pack     : center  ; -ms-flex-align        : center ; -ms-flex-item-align : center ; -ms-flex-wrap     : none ;
-			-o-box-align      : center ; -o-box-pack      : center  ; -o-align-content      : center ; -o-align-items      : center ; -o-flex-wrap      : none ;
-			-webkit-box-align : center ; -webkit-box-pack : center  ; -webkit-align-content : center ; -webkit-align-items : center ; -webkit-flex-wrap : none ;
 		align-content : center ; align-items : center ;
 		box-align     : center ; box-pack    : center ;
-					display   : -moz-box    ;    display  : -moz-flex    ;
-					display   : -ms-box     ;    display  : -ms-flexbox  ; display : -ms-flex ;
-					display   : -o-flex     ;
-					display   : -webkit-box ;    display  : -webkit-flex ;
 		display       : box    ; display     : flex ;
 		}
 
@@ -17,157 +9,46 @@
 		http://dev.w3.org/csswg/css3-flexbox/#flex-direction-property
 		http://msdn.microsoft.com/en-us/library/windows/apps/hh996820.aspx
 	~*/
-	.box-h {
-			-moz-box-orient    : horizontal ; -moz-flex-direction    : row    ;
-			-ms-box-orient     : horizontal ; -ms-flex-direction     : row    ;
-			-o-box-orient      : horizontal ; -o-flex-direction      : row    ;
-			-webkit-box-orient : horizontal ; -webkit-flex-direction : row    ;
-		box-orient : horizontal ; flex-direction : row    ; width  : 100% ;
-		}
-	.box-v {
-			-moz-box-orient    : vertical   ; -moz-flex-direction    : column ;
-			-ms-box-orient     : vertical   ; -ms-flex-direction     : column ;
-			-o-box-orient      : vertical   ; -o-flex-direction      : column ;
-			-webkit-box-orient : vertical   ; -webkit-flex-direction : column ;
-		box-orient : vertical   ; flex-direction : column ;
-		/*width      : 100% ;  required by FF */
-		}
+	.box-h { box-orient : horizontal ; flex-direction : row    ; }
+	.box-v { box-orient : vertical   ; flex-direction : column ; }
 
 	/*~	see:
 		http://dev.w3.org/csswg/css3-flexbox/#align-items-property
 		http://msdn.microsoft.com/en-us/library/windows/apps/hh996822.aspx
 	~*/
-	.box-align-baseline {
-			-moz-box-align    : baseline ;   -moz-align-items    : baseline ;
-			-ms-box-align     : baseline ;   -ms-flex-item-align : baseline ;
-			-webkit-box-align : baseline ;   -webkit-align-items : baseline ;
-			-o-box-align      : baseline ;   -o-align-items      : baseline ;
-		box-align : baseline ; align-items : baseline ;
-		}
-
-	.box-align-end {
-			-moz-box-align    : end      ;   -moz-align-items    : flex-end ;
-			-ms-box-align     : end      ;   -ms-flex-item-align : flex-end ;
-			-webkit-box-align : end      ;   -webkit-align-items : flex-end ;
-			-o-box-align      : end      ;   -o-align-items      : flex-end ;
-		box-align : end      ; align-items : flex-end ;
-		}
-
-	.box-align-start {
-			-moz-box-align    : start    ;    -moz-align-items    : flex-start ;
-			-ms-box-align     : start    ;    -ms-flex-item-align : flex-start ;
-			-webkit-box-align : start    ;    -webkit-align-items : flex-start ;
-			-o-box-align      : start    ;    -o-align-items      : flex-start ;
-		box-align : start    ; align-items : flex-start ;
-		}
-
-	.box-align-stretch {
-			-moz-box-align    : stretch  ;   -moz-align-items    : stretch ;
-			-ms-box-align     : stretch  ;   -ms-flex-item-align : stretch ;
-			-webkit-box-align : stretch  ;   -webkit-align-items : stretch ;
-			-o-box-align      : stretch  ;   -o-align-items      : stretch ;
-		box-align : stretch  ; align-items : stretch ;
-		}
+	.box-align-baseline { box-align : baseline ; align-items : baseline   ; }
+	.box-align-end      { box-align : end      ; align-items : flex-end   ; }
+	.box-align-start    { box-align : start    ; align-items : flex-start ; }
+	.box-align-stretch  { box-align : stretch  ; align-items : stretch    ; }
 
 	/*~	see:
 		http://dev.w3.org/csswg/css3-flexbox/#align-content-property
 		http://msdn.microsoft.com/en-us/library/windows/apps/hh996819.aspx
 	~*/
-	.box-content-around {
-			-moz-align-content : space-around ;  -ms-flex-align : center ;  -webkit-align-content : space-around ;
-		align-content : space-around ;
-		}
-	.box-content-between {
-			-moz-align-content : space-between ; -ms-flex-align : center ;  -webkit-align-content : space-between ;
-		align-content : space-between ;
-		}
-	.box-content-center {
-			-moz-align-content : center ;        -ms-flex-align : center ;  -webkit-align-content : center ;
-		align-content : center ;
-		}
-	.box-content-end {
-			-moz-align-content : flex-end ;      -ms-flex-align : end ;     -webkit-align-content : flex-end ;
-		align-content : flex-end ;
-		}
-	.box-content-start {
-			-moz-align-content : flex-start ;    -ms-flex-align : start ;   -webkit-align-content : flex-start ;
-		align-content : flex-start ;
-		}
-	.box-content-stretch {
-			-moz-align-content : stretch ;       -ms-flex-align : stretch ; -webkit-align-content : stretch ;
-		align-content : stretch ;
-		}
+	.box-content-around  { align-content : space-around  ; }
+	.box-content-between { align-content : space-between ; }
+	.box-content-center  { align-content : center        ; }
+	.box-content-end     { align-content : flex-end      ; }
+	.box-content-start   { align-content : flex-start    ; }
+	.box-content-stretch { align-content : stretch       ; }
 
 	/*~	see:
 		http://dev.w3.org/csswg/css3-flexbox/#justify-content-property
 		http://msdn.microsoft.com/en-us/library/windows/apps/hh996825.aspx
 	~*/
-	.box-pack-around {
-			-moz-box-pack    : center ; -moz-justify-content    : space-around ;
-			-ms-box-pack     : center ; -ms-flex-pack           : justify      ;
-			-webkit-box-pack : center ; -webkit-justify-content : space-around ;
-		justify-content : space-around ;
-		}
-	.box-pack-between {
-			-moz-box-pack    : center ; -moz-justify-content    : space-between ;
-			-ms-box-pack     : center ; -ms-flex-pack           : justify       ;
-			-webkit-box-pack : center ; -webkit-justify-content : space-between ;
-		justify-content : space-between ;
-		}
-	.box-pack-center {
-			-moz-box-pack    : center ; -moz-justify-content    : center ;
-			-ms-box-pack     : center ; -ms-flex-pack           : center ;
-			-webkit-box-pack : center ; -webkit-justify-content : center ;
-		box-pack : center ; justify-content : center ;
-		}
-	.box-pack-end {
-			-moz-box-pack    : end ; -moz-justify-content    : flex-end ;
-			-ms-box-pack     : end ; -ms-flex-pack           : end      ;
-			-webkit-box-pack : end ; -webkit-justify-content : flex-end ;
-		box-pack   : end   ; justify-content : flex-end ;
-		}
-	.box-pack-start {
-			-moz-box-pack    : start ; -moz-justify-content    : flex-start ;
-			-ms-box-pack     : start ; -ms-flex-pack           : start      ;
-			-webkit-box-pack : start ; -webkit-justify-content : flex-start ;
-		box-pack : start ; justify-content : flex-start ;
-		}
-	.box-pack-stretch {
-			-moz-justify-content    : stretch ;
-			-ms-flex-pack           : stretch ;
-			-webkit-justify-content : stretch ;
-		box-pack : center ; justify-content : stretch ;
-		}
+	.box-pack-around  { box-pack : center ; justify-content : space-around  ; }
+	.box-pack-between { box-pack : center ; justify-content : space-between ; }
+	.box-pack-center  { box-pack : center ; justify-content : center       ; }
+	.box-pack-end     { box-pack : end    ; justify-content : flex-end     ; }
+	.box-pack-start   { box-pack : start  ; justify-content : flex-start   ; }
+	.box-pack-stretch { box-pack : center ; justify-content : stretch      ; }
 
 /*~~ box item classes: add these to the direct children of the element with the above class(es) to customise their layout ~~*/
 	/*~	see:
 		http://dev.w3.org/csswg/css3-flexbox/#flex
 		http://msdn.microsoft.com/en-us/library/windows/apps/hh996818.aspx
 	~*/
-	.box-item {
-		/*display : block ;*/
-			-moz-flex : 0 0 auto ; -ms-flex : 0 0 auto ; -o-flex : 0 0 auto ; -webkit-flex : 0 0 auto ;
-		flex   : 0 0 auto ;
-		}
-
-	.box-item-flex {
-			-moz-box-flex    : 1 ; -moz-flex    : 1 0 auto ;
-			-ms-box-flex     : 1 ; -ms-flex     : 1 0 auto ;
-			-o-box-flex      : 1 ; -o-flex      : 1 0 auto ;
-			-webkit-box-flex : 1 ; -webkit-flex : 1 0 auto ;
-		box-flex : 1 ; flex : 1 0 auto ;
-		}
-	.box-item-flex-2 {
-			-moz-box-flex    : 2 ; -moz-flex    : 2 1 auto ;
-			-ms-box-flex     : 2 ; -ms-flex     : 2 1 auto ;
-			-o-box-flex      : 2 ; -o-flex      : 2 1 auto ;
-			-webkit-box-flex : 2 ; -webkit-flex : 2 1 auto ;
-		box-flex : 2 ; flex : 2 1 auto ;
-		}
-	.box-item-flex-3 {
-			-moz-box-flex    : 3 ; -moz-flex    : 3 2 auto ;
-			-ms-box-flex     : 3 ; -ms-flex     : 3 2 auto ;
-			-o-box-flex      : 3 ; -o-flex      : 3 2 auto ;
-			-webkit-box-flex : 3 ; -webkit-flex : 3 2 auto ;
-		box-flex : 3 ; flex : 3 2 auto ;
-		}
+	.box-item        { flex : 0 0 auto ; }
+	.box-item-flex   { box-flex : 1 ; flex : 1 0 auto ; }
+	.box-item-flex-2 { box-flex : 2 ; flex : 2 1 auto ; }
+	.box-item-flex-3 { box-flex : 3 ; flex : 3 2 auto ; }

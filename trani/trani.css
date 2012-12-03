@@ -1,0 +1,28 @@
+	.trani { transition : all 350ms ease-in-out ; }
+
+	.trani-delay-1 { transition-delay : 250ms; }
+	.trani-delay-2 { transition-delay : 500ms; }
+	.trani-delay-3 { transition-delay : 750ms; }
+
+	.trani-fn-ease     { transition-timing-function : ease; }
+	.trani-fn-ease-in  { transition-timing-function : ease-in; }
+	.trani-fn-ease-io  { transition-timing-function : ease-in-out; }
+	.trani-fn-ease-out { transition-timing-function : ease-out; }
+	.trani-fn-linear   { transition-timing-function : linear; }
+
+	.trani-ms-1 { transition-duration : 250ms; }
+	.trani-ms-2 { transition-duration : 500ms; }
+	.trani-ms-3 { transition-duration : 750ms; }
+
+	.trani-prop-b   { transition-property : bottom; }
+	.trani-prop-bl  { transition-property : bottom, left; }
+	.trani-prop-br  { transition-property : bottom, right; }
+	.trani-prop-l   { transition-property : left; }
+	.trani-prop-h   { transition-property : max-height; }
+	.trani-prop-r   { transition-property : right; }
+	.trani-prop-o   { transition-property : opacity; }
+	.trani-prop-t   { transition-property : top; }
+	.trani-prop-tl  { transition-property : top, left; }
+	.trani-prop-tr  { transition-property : top, right; }
+	.trani-prop-txt { transition-property : font-size, line-height, opacity; }
+	.trani-prop-w   { transition-property : max-width; }
