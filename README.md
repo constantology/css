@@ -1,12 +1,19 @@
-# css
+# css : IN VERY EARLY DEVELOPMENT
 
 a few css modules that I sometimes find useful as "drop in functionality".
 
+**NOTE:** this is a very quick thrown together outline of a few ideas I have. None are complete or tested as yet and I'll most likely be switching them to use stylus or less, instead of vanilla CSS, once I make up my mind.
+
 - [box](box) — flexbox related thingamajig.
 - [col](col) — multi-column crappola.
+- [form](form) — leaving the styling to your hearts desire, this is — going to be — more about the layout of fields.
+- [datagrid](datagrid) — putting the `able` into sexy data tables.
+- [grid](grid) — grid based layouts redux!
 - [img](img) — image replacement whatchamahoozas.
+- [list](list) — it's in one now!
+- [mebug](mebug) — helping your CSS **me**dia query de**bug**ing.
 - [reset](reset) — you know what this is, don't make me hurt you.
-- [trani](trani) — transition propositions
+- [transam](transam) — animate, transform and transition goodness.
 
 ## License
 

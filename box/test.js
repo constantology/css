@@ -1,3 +1,8 @@
+/* *
+* This is quick and (very) dirty JS and is in no way, shape and/or form — except for the nice aligning —
+* a true representation of my js-foo. You can see any one of my other github repos for that. :)
+* */
+
 var box = {
 		cls_base    : 'test bbox box',
 		cls_item    : 'box-item',
@@ -56,6 +61,4 @@ var box = {
 
 window.addEventListener( 'DOMContentLoaded', function() {
 	document.body.querySelector( '.panels-ct' ).innerHTML += box.html;
-
-	document.getElementById( 'box-nested' ).click();
 } );

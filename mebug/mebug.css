@@ -1,0 +1,47 @@
+.MEBUG:after,
+.MEBUG:before {
+	font-size   : 24px;
+	font-weight : bold;
+	height      : 48px;
+	position    : fixed;
+	top         : 4px;
+	width       : 240px;
+	z-index     : 100000;
+	}
+.MEBUG:after  { right : 4px; }
+.MEBUG:before { left  : 4px; }
+
+@media (max-width: 1920px), (max-width: 10000px) {
+	.MEBUG { background-color : rgba(255, 255, 0, 0.25) !important; }
+	.MEBUG:after { content : "max-width: 1920px"; }
+}
+@media (max-width: 1600px) {
+	.MEBUG { background-color : rgba(255, 0, 0, 0.25) !important; }
+	.MEBUG:after { content : "max-width: 1600px"; }
+}
+
+@media (max-width: 1280px) {
+	.MEBUG { background-color: rgba(0, 255, 0, 0.25) !important; }
+	.MEBUG:after { content : "max-width: 1280px"; }
+}
+
+@media (max-width: 960px) {
+	.MEBUG { background-color: rgba(0, 0, 255, 0.25) !important; }
+	.MEBUG:after { content : "max-width: 960px"; }
+}
+
+@media (max-height: 1201px), (max-height: 10000px) {
+	.MEBUG:before { content : "max-height: 1200px"; }
+}
+
+@media (max-height: 1020px) {
+	.MEBUG:before { content : "max-height: 1020px"; }
+}
+
+@media (max-height: 840px) {
+	.MEBUG:before { content : "max-height: 840px"; }
+}
+
+@media (max-height: 660px) {
+	.MEBUG:before { content : "max-height: 660px"; }
+}
