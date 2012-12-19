@@ -6,7 +6,13 @@
 		<link href="../reset/reset.all.css" rel="stylesheet" type="text/css" />
 		<link href="mebug.css"              rel="stylesheet" type="text/css" />
 	</head>
-	<body class="MEBUG">
-
+	<body>
+		<script src="mebug.qs.debug.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			;!function() {
+				if ( !~document.body.className.indexOf( 'MEBUG' ) )
+					location.search += 'debug';
+			}();
+		</script>
 	</body>
 </html>
