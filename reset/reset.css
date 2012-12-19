@@ -22,7 +22,7 @@ a, html, legend, mark { color : rgb( 55, 55, 55 ); }
 
 address, article, aside, blockquote,
 dd, details, div, dl, dt,
-fieldset, figcaption, figure, footer, form, 
+fieldset, figcaption, figure, footer, form,
 h1, h2, h3, h4, h5, h6,
 header, hgroup,
 legend, menu, nav, ol,
@@ -36,6 +36,12 @@ ul {
 	margin     : 0;
 	padding    : 0;
 	}
+
+/* this is a bastardisation of a useful suggestion from eric meyer:
+   http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation
+   Feel free to add/remove/shuffle elements around to fit your own specific needs */
+abbr, acronym, blockquote, code, dir, kbd, pre, q, samp, tt, var { hyphens : none; }
+caption, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, li, p, summary, td, th { hyphens : auto; }
 
 abbr, acronym { border : 0; font-variant : normal; }
 
